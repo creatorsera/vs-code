@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading-bar"></div>
+    
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-icon explorer-toggle">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkgMTlWNUg1djE0aDE0em0wIDJINWEyIDIgMCAwMS0yLTJWNWEyIDIgMCAwMTItMmgxNGEyIDIgMCAwMTIgMnYxNGEyIDIgMCAwMS0yIDJ6bS03LTloMnYySDl2LTJ6bTAgNGgyVjloLTJ2NnptMC00aDJWOWgtMnYyeiIvPjwvc3ZnPg==" />
+            </div>
+            <div class="sidebar-icon">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMWMtNi4wNzQgMC0xMSA0LjA3NS0xMSAxMHM0LjkyNiAxMSAxMSAxMSAxMS00LjA3NSAxMS0xMS00LjkyNi0xMS0xMS0xMXptMCAyYTkgOSAwIDAxOSA5IDkgOSAwIDAxLTkgOSA5IDkgMCAwMS05LTkgOSA5IDAgMDE5LTl6bS0uNzc3IDguOTk3bC0zLjU1NiAzLjU1Ni0xLjQxNC0xLjQxNSA0Ljk2OS00Ljk2OSA0Ljk0NyA0Ljk0Ny0xLjQxNCAxLjQxNC00Ljk0Ny00Ljk0N3oiLz48L3N2Zz4=" />
+            </div>
+        </div>
+
+        <!-- Explorer -->
+        <div class="explorer active">
+            <div class="explorer-header">EXPLORER</div>
+            <div class="file-tree">
+                <div class="file-item folder">📁 src
+                    <div class="file-item file">📄 index.html</div>
+                    <div class="file-item file">📄 styles.css</div>
+                    <div class="file-item file">📄 script.js</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Editor -->
+        <div class="editor">
+            <div class="tabs">
+                <div class="tab active">index.html</div>
+                <div class="tab">styles.css</div>
+                <div class="tab">script.js</div>
+            </div>
+            
+            <div class="code-editor">
+                <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8</div>
+                <div class="code-content" contenteditable="true">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+</html>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
